@@ -39,8 +39,6 @@ def fib(num):
         return seq
     else:
         seq.append(seq[-1] + seq[-2])
-        print(seq)
-        
         return fib(num-1)
 
 fib(10)
