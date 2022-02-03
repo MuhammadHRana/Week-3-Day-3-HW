@@ -21,7 +21,7 @@ print(sorter)
 places = [('Nassau', 32), ('Boston', 12), ('Los Angeles', 44), ('Miami', 29)]
 
 
-for k,v in enumerate(map(lambda x: x[-1]*(9/5) + 32, places)): places[k] = [places[k][0], v]
+for k,v in enumerate(map(lambda x: x[-1]*(9/5) + 32, places)): places[k] = (places[k][0], v)
 print(places)
 
 
@@ -41,4 +41,4 @@ def fib(num):
         seq.append(seq[-1] + seq[-2])
         return fib(num-1)
 
-fib(10)
+fib(15)
